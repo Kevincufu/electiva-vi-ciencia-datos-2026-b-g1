@@ -63,3 +63,10 @@
 4. Frases en inglés
 Descriptive analytics summarizes what has already happened using historical data to understand past business performance.
 Predictive analytics forecasts what is likely to happen in the future by applying statistical models and trends to existing information.
+García, E. y Martínez, A. (2021). Introducción a la Ciencia de Datos: Fundamentos y Aplicaciones. Alfaomega. (Cap. 2: Tipos y estructuras de datos)
+Elmasri, R. y Navathe, S. (2017). Sistemas de Bases de Datos: Fundamentos. Pearson Educación. (Sección sobre datos estructurados, semiestructurados y no estructurados)
+VanderPlas, J. (2017). Python y Ciencia de Datos: Recetario de herramientas esenciales. O’Reilly Media.
+Sobre analítica descriptiva y predictiva
+Provost, F. y Fawcett, T. (2018). Ciencia de Datos para Negocios: Qué hay que saber sobre minería de datos y análisis analítico. O’Reilly Media. (Cap. 1: Tipos de análisis descriptivo y predictivo)
+Grus, J. (2020). Ciencia de Datos desde Cero: Principios básicos con Python. (2.ª ed.). Anaya Multimedia.
+Müller, A. C. y Guido, S. (2018). Introducción al Aprendizaje Automático con Python. Addison-Wesley.
