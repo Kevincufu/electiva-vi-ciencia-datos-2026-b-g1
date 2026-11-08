@@ -1,0 +1,30 @@
+-- Medida 1: total de ventas
+Ventas Totales =
+SUM(Ventas[ventas])
+
+-- Medida 2: promedio móvil de 3 meses
+Promedio Móvil 3M =
+VAR FechaMax = MAX(Calendario[Fecha])
+RETURN
+AVERAGEX(
+    DATESINPERIOD(
+        Calendario[Fecha],
+        FechaMax,
+        -3,
+        MONTH
+    ),
+    CALCULATE([Ventas Totales])
+)
+
+-- Por qué mejora la métrica:
+-- [Ventas Totales] centraliza la lógica base en una medida reutilizable.
+-- [Promedio Móvil 3M] reduce ruido de corto plazo y facilita interpretar la tendencia.
+-- El uso de una tabla Calendario permite inteligencia de tiempo consistente.
+
+
+-- ================================================
+-- BIBLIOGRAFÍA / REFERENCIAS TÉCNICAS (APA 7)
+-- ================================================
+-- Microsoft. (2026). Time intelligence functions (DAX). Microsoft Learn. https://learn.microsoft.com/dax/time-intelligence-functions-dax
+-- Microsoft. (2026). DATESINPERIOD function (DAX). Microsoft Learn. https://learn.microsoft.com/dax/datesinperiod-function-dax
+-- Microsoft. (2026). AVERAGEX function (DAX). Microsoft Learn. https://learn.microsoft.com/dax/averagex-function-dax
